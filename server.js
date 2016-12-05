@@ -16,7 +16,8 @@ app.use(bodyParser.json());
   next();
 });
 
-var proxy_url = "10.25.2.101";
+// YOUR_REST_API_IP_ADDRESS 
+var proxy_url = "0.0.0.0";
 
 
 app.get('/*', function(req, res, next){
@@ -97,7 +98,7 @@ app.post('/*', function(req, res, next){
 
 
 app.listen(8000, function (){	
-console.log('welcome to API Proxy server');
+console.log('welcome to `CPROXY_URL` API Proxy server');
 console.log('viewed at : http://localhost:8000');
 });
 
