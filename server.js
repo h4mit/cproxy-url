@@ -20,7 +20,7 @@ app.all('*', function (req, res, next) {
         // CORS Preflight
         res.send();
     } else {
-        var targetURL =  'http://192.168.0.1:8081' // YOUR_URL;;
+        var targetURL =  'http://192.168.0.1:8081' // YOUR_REST_API_IP_ADDRESS;
         if (!targetURL) {
             res.send(500, { error: 'There is no Target-Endpoint in the request' });
             return;
